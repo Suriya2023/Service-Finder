@@ -4,96 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="/Portfolio/media.css"> -->
-    <!-- <link rel="icon" type="image/png" href="/Portfolio Folder/Screenshot (1).png"> -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
     <link rel="icon" type="image/png" href="/Portfolio/Screenshot (1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Portfolio/media.css">
+    <script src="index.js"></script>
 
-    <title> job</title>
+    <title>Blog Html</title>
     <style>
-        .contact-us-conatner {
-            width: 100%;
-            height: 400px;
-            border: 2PX SOLID white;
-            /* position:absolute; */
-            margin: 0 auto;
-
-            background-size: cover;
-            background-position: center;
-            /* background-image:url(/Portfolio\ Folder/image/portfolio.png); */
-            /* background-image: url(https://th.bing.com/th?id=OIP.VwwOBStJDlhKW-4BLtFFCgHaFw&w=144&h=144&c=2&o=6&dpr=1.5&pid=WebQS); */
-            background-image: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-
+        .post-thum {
+            border-radius: 15px;
+            overflow: hidden;
         }
 
-
-        .contact-us-main {
-            width: 100%;
-            /* position: absolute; */
-            height: 100%;
-            background-color: rgba(10 10 10 0.6);
-            /* line-height: 41vmin; */
-            margin: 0 auto;
-            text-align: center;
+        .post-bx {
             font-family: sans-serif;
-            /* color: #fff; */
-            /* background: rgba(23, 22, 22, 0.5); */
+            background-color: #f9fafd;
+            border-radius: 15px;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-bottom-color: #022178;
+            margin-bottom: 30px;
+            border-bottom-color: #162F96;
         }
 
-        .contact-main-hone {
-            color: black;
-            /* text-align: center; */
-            position: relative;
-            /* left: 50%;
-        right: 50%;
-        top: 50%;
-        bottom: 50%; */
+        .post-bx .post-thum {
+            border-radius: 15px;
+            overflow: hidden;
         }
 
-        #indeterminate {
-            display: block;
+        .post-thum img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-categories {
             position: relative;
-            cursor: pointer;
-            top: 137px;
-            border: 137px;
-            font-size: 7vmin;
-            font-family: cursive;
-            text-decoration: underline;
-            color: white;
-            background-color: rgb(7 7 7 / 50%);
-            font-weight: 900;
-            /* -webkit-text-stroke: 2px rgb(38, 84, 99); */
-            /* -webkit-background-image: url(/HTML/bl.png); */
-            width: 50%;
-            margin: 0 auto;
-            border: 3pxx solid white;
+            margin-top: -46px;
+            margin-bottom: 20px;
+        }
+
+        .post-categories a {
+            display: inline-block;
+            padding: 5px 20px;
+            color: #fff;
+            text-transform: uppercase;
             border-radius: 10px;
-            box-shadow: 4px 0px 1px 57px rgb(158 149 168 / 50%);
-            border: 2px solid rebeccapurple;
-            text-transform: math-auto;
-            line-height: 83px;
-            padding-bottom: 23px;
+            background-color: #FFB600;
+            margin-right: 8px;
+            font-size: 14px;
         }
 
-        #indeterminate span>h3 {
-            font-weight: 900;
+        .post-meta {
+            clear: both;
+            padding: 22px 30px;
+            margin: 0 -30px;
+            border-top: 1px solid #e3e3e3;
+            /* border-bottom: 2px solid #e3e3e3; */
+        }
 
+        .post-meta ul {
+            margin: 0px 0px 10px 0px;
+            float: none;
+        }
+
+        .post-meta ul li {
+            color: #595959;
+            position: relative;
+            padding-right: 10px;
+        }
+
+        .post-date {
+            width: inherit;
+            background: none;
+            margin: 0px;
+        }
+
+        .post-meta ul li {
+            display: inline-block;
+            padding: 0;
+            color: #a9a9a9;
+        }
+
+        .post-date span {
+            background: none;
+            padding: 0px;
+            font-size: inherit;
+            display: inherit;
+            vertical-align: inherit;
+        }
+
+        .post-meta ul li a {
+            text-decoration: none;
+            color: #595959;
+        }
+
+        .post-title a {
+            font-size: 24px;
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        /* .container { */
+        .container {
+            /* padding-right: 15px; */
+            /* padding-left: 15px; */
+            /* margin-right: auto; */
+            margin-left: auto;
+            padding: 42px;
+        }
+
+        .row {
+            margin-right: -15px;
+            flex-direction: column;
+
+            margin-left: -15px;
+        }
+
+        .col-md-8 {
+            width: 66.66666667%;
+        }
+
+        .col-md-8 {
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-md-4 {
+            width: 33.33333333%;
+        }
+
+        .col-md-4 {
+            float: left;
+        }
+
+        .col-md-4 {
+
+            /* position: absolute; */
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            top: 174px;
+            /* position: relative; */
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+            float: right;
+            position: absolute;
+            left: 67%;
+        }
+
+
+        .search-form {
+            /* display: -ms-flexbox; */
+            display: flex;
+            position: relative;
+        }
+
+        .search-form label {
+            display: block;
+            width: 100%;
+        }
+
+        .screen-reader-text {
+            /* border: 0; */
+            /* clip: rect(1px, 1px, 1px, 1px); */
+            -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            /* padding: 0; */
+            /* position: absolute; */
+            /* width: 1px; */
+            /* word-wrap: normal !important; */
+        }
+
+        .screen-reader-text {
+
+            display: block;
+        }
+
+        .search-field {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            height: 40px;
+            outline: none;
+            border-radius: 10px;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        .search-submit {
+            border: none;
+            padding: 7px 15px;
+            position: absolute;
+            right: 0px;
+            top: -2px;
+            height: 40px;
+            background-color: #FFB600;
+            border-color: #FFB600;
+            color: #000000;
+            border-radius: 442px 142px 51px 0px;
+
+
+        }
+
+        .side-bar .widget {
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .widget {
+            margin-bottom: 30px;
+        }
+
+        .widget-title {
+            padding-bottom: 15px;
+            position: relative;
+            border-bottom: 1px solid #e1e1e1;
+            margin-bottom: 30px;
+        }
+
+        .widget-title ul {
+
+            list-style: none;
+            margin: 0;
+        }
+
+
+
+
+        .widget_recent_entries ul li {
+            /* list-style: none; */
+
+            padding-bottom: 18px;
+            margin-bottom: 13px;
+            border-bottom: 1px solid #e1e1e1;
+            position: relative;
+            padding: 10px 10px 10px 20px;
+            margin-bottom: 0;
+            line-height: 20px;
+        }
+
+
+
+
+
+
+        a {
+            color: #767676;
+            outline: 0 none;
+            text-decoration: none;
+        }
+
+
+        @media screen and (max-width:768px) {
+
+            .post-meta {
+                /* clear: both; */
+                /* padding: 22px 30px; */
+                margin: 0 0px;
+            }
+
+
+            .col-md-8 {
+                width: 100%;
+            }
+
+            /* .row { */
+            /* margin-right: -15px; */
+            /* margin-left: -15px; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* } */
+
+            .col-md-4 {
+                top: 0;
+                left: 0px;
+                width: 100%;
+                position: relative;
+            }
         }
     </style>
+
 </head>
 
+
 <body>
-
-
-
-
     <header>
 
 
@@ -109,7 +310,8 @@
             style="background-color: black;margin-top: 0px;padding-top: 26px; position: relative; height: 103px;">
             <!-- logo -->
             <div class="div-logo-one">
-
+                <!-- <div class="inner-logo"> -->
+                <!-- </div>                -->
                 <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-light.png"
                     style="position: absolute;">
                 <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png" alt="">
@@ -134,6 +336,7 @@
                                 HOME &nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
                             </a>
                             <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
                                 <div id="idalinsttupe"><a href="" class="link1">Home1</a></div><br><br>
                                 <hr><br>
                                 <div id="idalinsttupe"><a href="" class="link1">Home2</a></div><br><br>
@@ -245,13 +448,13 @@
 
                         </div>
                     </li>
-                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/blog1.html"
+                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="blog1.html"
                         style="color: white;">Blog</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/contactus2.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="contactus2.html"
                         style="color: white;">Contact Us</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/post3.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="post3.html"
                         style="color: white;">Post a Job</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/job4.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="job4.html"
                         style="color: white;">Jobs</a></li>
                 </ul>
 
@@ -263,7 +466,7 @@
                     style="display: flex;flex-wrap: wrap;justify-content: space-evenly;min-width: 217px;/* border: 7px solid indianred; */">
                     <!-- <li><button> -->
                     <li type="none" id="btnid"><button onclick="MainBoxDivLi()"><i class="fa-solid fa-user"></i> LOGIN
-                        </button></li>&nbsp;
+                        </button></li><br>
                     <li type="none" id="btnid"><button onclick="ProviderCostomer()"><i class="fa-solid fa-plus"></i>SING
                             UP</button></li>
                 </ul>
@@ -381,6 +584,7 @@
                                 </div>
                                 <!-- https://www.msn.com/en-in/sports/cricket/ipl?ocid=winp2fptaskbar&cvid=06de50b557754ca3a8572803e6487c46 -->
 
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
@@ -608,6 +812,28 @@
                         </div>
                     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
 
@@ -641,7 +867,7 @@
         </div>
 
         </div>
-        <!-- <br> -->
+        <br>
 
 
 
@@ -655,170 +881,389 @@
 
 
         </div>
-
 
 
 
     </header>
-
-
-
-
-
     <section>
-        <div class="contact-us-conatner">
-            <div class="contact-us-main">
-                <div class="contact-main-hone">
-                    <h1 id="indeterminate">
-                        Job <br><span>
-                            <h3>Freshers Filter By Job Type</h3>
-                        </span>
-                    </h1>
-
-                    <br>
-
-                </div>
-            </div>
-        </div>
-        <!-- second -->
-    </section>
-    <footer>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0 pb-xl-3">
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4" style="background:white;">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/security.svg"
-                            width="40" alt="Comments">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Comments on Tasks</h3>
-                        <p class="mb-0">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
-                    </div>
-                </div>
-                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block">
-                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
-            </div>
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/tasks.svg"
-                            width="40" alt="Analytics">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Tasks Analytics</h3>
-                        <p class="mb-0">Non imperdiet facilisis nulla tellus Morbi scelerisque eget adipiscing
-                            vulputate.</p>
-                    </div>
-                </div>
-                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-md-block">
-                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
-            </div>
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/notifications.svg"
-                            width="40" alt="Group">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Multiple Assignees</h3>
-                        <p class="mb-0">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
-                    </div>
-                </div>
-                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block d-md-none">
-                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
-            </div>
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/group.svg"
-                            width="40" alt="Notifications">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Notifications</h3>
-                        <p class="mb-0">Diam, suspendisse velit cras ac. Lobortis diam volutpat, eget pellentesque
-                            viverra.</p>
-                    </div>
-                </div>
-                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-md-block">
-                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block d-md-none">
-            </div>
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/analytics.svg"
-                            width="40" alt="Tasks">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Sections &amp; Subtasks</h3>
-                        <p class="mb-0">Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus.</p>
-                    </div>
-                </div>
-                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block">
-            </div>
-
-            <!-- Item -->
-            <div class="col position-relative">
-                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
-                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
-                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/comments.svg"
-                            width="40" alt="Security">
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="h5 pb-1 mb-2">Data Security</h3>
-                        <p class="mb-0">Aliquam malesuada neque eget elit nulla vestibulum nunc cras.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
-    <footer>
+        <!-- lorem*60 -->
 
-
-        <div id="pngimglastfooter">
-            <div class="bacground-latfooyer"></div>
-        </div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2>Beautiful, hand-crafted designs to get you started_</h2>
-                    <p>Can't decide which one to choose? You have the freedom to choose from pre-built elements from
-                        different demos to mix them together in unlimited ways. Start making your creative website right
-                        now!</p>
-                </div>
-                <ul class="list-group-inline list-group-icon-primary-bg justify-content-center w-100 d-none d-md-flex">
-                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Hand-crafted Design</li>
-                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Lifetime License</li>
-                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Top-Notch Support</li>
-                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Free Updates</li>
-                </ul>
-            </div>
 
-            <!-- Demo item -->
             <div class="row">
-                <div class="col-md-8 mx-auto text-center mt-5">
-                    <p>Start building beautiful, eye-catchy websites in minutes. <u><a
-                                href="https://themes.getbootstrap.com/product/folio-creative-agency-portfolio-theme/"
-                                class="text-dark text-primary-hover">Grab Folio now.</a></u></p>
+
+                <!-- Left part start -->
+
+                <div class="col-md-8">
+
+                    <div id="grid">
+
+                        <div class="row">
+
+
+
+                            <div id="post-189"
+                                class="post-189 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized blog-post blog-list col-md-12 sf-blog-style-1">
+
+                                <div class="post-bx">
+
+                                    <!-- Content section for blogs start -->
+
+                                    <div class="post-thum"> <a href=""><img title="My fourth blog post title"
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/motorcycle-driving-school-850x400.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+
+                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
+                                        </div>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+
+                                                <li class="post-date"><span>January 12, 2016</span></li>
+
+                                                <li class="post-author">By <a href="" title="Posts by admin"
+                                                        rel="author">admin</a> </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-text">
+                                            <!-- <br> -->
+
+                                            <h4 class="post-title"> <a href="">My
+                                                    fourth blog post title</a> </h4>
+
+                                            <p style="    font-size: 11px;
+                                                    padding-top: 15px;
+                                                    padding-bottom: 15px;
+                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap introduction electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with
+                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently with desktop publishing software like Aldus PageMaker including
+                                                versions of Lorem Ipsum.</p>
+
+
+                                            <p></p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Content section for blogs end -->
+
+                                </div>
+
+                            </div>
+
+                            <!-- <br><br> -->
+
+                            <div id="post-186"
+                                class="post-186 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized blog-post blog-list col-md-12 sf-blog-style-1">
+
+                                <div class="post-bx">
+
+                                    <!-- Content section for blogs start -->
+
+                                    <div class="post-thum"> <a href=""><img title="My third blog post title"
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/woman-with-hat-sitting-chairs-beach-beautiful-tropical-beach-woman-relaxing-tropical-beach-koh-nangyuan-island-850x400.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+
+                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
+                                        </div>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+
+                                                <li class="post-date"><span>January 12, 2016</span></li>
+
+                                                <li class="post-author">By <a href="" title="Posts by admin"
+                                                        rel="author">admin</a> </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-text">
+
+                                            <h4 class="post-title"> <a href="">My
+                                                    third blog post title</a> </h4>
+
+                                            <p style="    font-size: 11px;
+                                                    padding-top: 15px;
+                                                    padding-bottom: 15px;
+                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap introduction electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with
+                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently with desktop publishing software like Aldus PageMaker including
+                                                versions of Lorem Ipsum.</p>
+
+
+                                            <p></p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Content section for blogs end -->
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div id="post-74"
+                                class="post-74 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-automobile tag-beauty-and-personal-care blog-post blog-list col-md-12 sf-blog-style-1">
+
+                                <div class="post-bx">
+
+                                    <!-- Content section for blogs start -->
+
+                                    <div class="post-thum"> <a href=""><img title="My second blog post title"
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/young-couple-buying-car-car-showroom-850x400.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+
+                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
+                                        </div>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+
+                                                <li class="post-date"><span>January 10, 2016</span></li>
+
+                                                <li class="post-author">By <a href="" title="Posts by admin"
+                                                        rel="author">admin</a> </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-text">
+
+                                            <h4 class="post-title"> <a href="">My
+                                                    second blog post title</a> </h4>
+
+                                            <p style="    font-size: 11px;
+                                                    padding-top: 15px;
+                                                    padding-bottom: 15px;
+                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap introduction electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with
+                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently with desktop publishing software like Aldus PageMaker including
+                                                versions of Lorem Ipsum.</p>
+
+
+                                            <p></p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Content section for blogs end -->
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div id="post-1002"
+                                class="post-1002 post type-post status-publish format-standard hentry category-uncategorized tag-automotive tag-cleaning tag-general-labor no-img-post blog-post blog-list col-md-12 sf-blog-style-1">
+
+                                <div class="post-bx">
+
+                                    <!-- Content section for blogs start -->
+
+                                    <div class="post-thum">
+                                    </div>
+                                    <div class="post-info">
+
+                                        <div class="post-categories"><a href="" rel="">Uncategorized</a></div>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+
+                                                <li class="post-date"><span>January 10, 2016</span></li>
+
+                                                <li class="post-author">By <a href="" title="Posts by admin"
+                                                        rel="author">admin</a> </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-text">
+
+                                            <h4 class="post-title"> <a href="">My
+                                                    first blog post title</a> </h4>
+
+                                            <p style="    font-size: 11px;
+                                                    padding-top: 15px;
+                                                    padding-bottom: 15px;
+                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap introduction electronic typesetting,
+                                                remaining essentially unchanged. It was popularised in the 1960s with
+                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                                recently with desktop publishing software like Aldus PageMaker including
+                                                versions of Lorem Ipsum.</p>
+
+
+                                            <p></p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Content section for blogs end -->
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="pagination-two pagination-center clearfix">
+
+
+                    </div>
+
                 </div>
+
+                <!-- Left part END -->
+
+                <!-- Side bar start -->
+
+                <div class="col-md-4">
+
+                    <!-- Default Sidebar -->
+                    <aside class="side-bar">
+                        <div class="bx-search widget search-2 widget_search">
+                            <form class="search-form" action="">
+                                <label>
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                                </label>
+                                <input type="submit" class="search-submit" value="Search">
+                            </form>
+                        </div>
+                        <div class="bx-recent-post widget recent-posts-2 widget_recent_entries">
+                            <h4 class="widget-title">Recent Posts</h4>
+                            <ul>
+                                <li>
+                                    <a href="">My
+                                        fourth blog post title</a>
+                                </li>
+                                <li>
+                                    <a href="">My
+                                        third blog post title</a>
+                                </li>
+                                <li>
+                                    <a href="">My
+                                        second blog post title</a>
+                                </li>
+                                <li>
+                                    <a href="">My
+                                        first blog post title</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="bx-recent-comments widget recent-comments-2 widget_recent_comments">
+                            <h4 class="widget-title">Recent Comments</h4>
+                            <ul id="recentcomments">
+                                <li class="recentcomments"><span class="comment-author-link"><a href=""
+                                            class="url">Remo</a></span> on <a href="">My
+                                        first blog post title</a></li>
+                                <li class="recentcomments"><span class="comment-author-link"><a href=""
+                                            class="url">Jounty
+                                            Routes</a></span> on <a href="">My
+                                        first blog post title</a></li>
+                                <li class="recentcomments"><span class="comment-author-link"><a href="" class="url">Mike
+                                            Jekson</a></span> on <a href="">My
+                                        first blog post title</a></li>
+                                <li class="recentcomments"><span class="comment-author-link"><a href="" class="url">Mr
+                                            WordPress</a></span> on <a href="">My
+                                        first blog post title</a></li>
+                            </ul>
+                        </div>
+                        <div class="bx-archives widget archives-3 widget_archive">
+                            <h4 class="widget-title">Archives</h4>
+                            <ul>
+                                <li><a href="">January 2016</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="bx-categories widget categories-3 widget_categories">
+                            <h4 class="widget-title">Categories</h4>
+                            <ul>
+                                <li class="cat-item cat-item-1"><a href="">Uncategorized</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="bx-meta widget meta-3 widget_meta">
+                            <h4 class="widget-title">Meta</h4>
+                            <ul>
+                                <li><a href="">Register</a>
+                                </li>
+                                <li><a href="">Log in</a></li>
+                                <li><a href="">Entries feed</a></li>
+                                <li><a href="">Comments
+                                        feed</a></li>
+
+                                <li><a href="">WordPress.org</a></li>
+                            </ul>
+
+                        </div>
+                    </aside>
+
+                </div>
+
+                <!-- Side bar END -->
+
             </div>
 
         </div>
-    </footer>
 
 
-    <br><br><br><br><br><br>
+
+    </section>
+
+
+
+
+
+
+
     <footer class="main-footer-last-type">
 
 
