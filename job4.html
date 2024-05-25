@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="/Portfolio/media.css"> -->
+    <!-- <link rel="icon" type="image/png" href="/Portfolio Folder/Screenshot (1).png"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="icon" type="image/png" href="/Portfolio/Screenshot (1).png">
+
+    <title> job</title>
+    <style>
+        .contact-us-conatner {
+            width: 100%;
+            height: 400px;
+            border: 2PX SOLID white;
+            /* position:absolute; */
+            margin: 0 auto;
+
+            background-size: cover;
+            background-position: center;
+            /* background-image:url(/Portfolio\ Folder/image/portfolio.png); */
+            /* background-image: url(https://th.bing.com/th?id=OIP.VwwOBStJDlhKW-4BLtFFCgHaFw&w=144&h=144&c=2&o=6&dpr=1.5&pid=WebQS); */
+            background-image: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+        }
+
+
+        .contact-us-main {
+            width: 100%;
+            /* position: absolute; */
+            height: 100%;
+            background-color: rgba(10 10 10 0.6);
+            /* line-height: 41vmin; */
+            margin: 0 auto;
+            text-align: center;
+            font-family: sans-serif;
+            /* color: #fff; */
+            /* background: rgba(23, 22, 22, 0.5); */
+        }
+
+        .contact-main-hone {
+            color: black;
+            /* text-align: center; */
+            position: relative;
+            /* left: 50%;
+        right: 50%;
+        top: 50%;
+        bottom: 50%; */
+        }
+
+        #indeterminate {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            top: 137px;
+            border: 137px;
+            font-size: 7vmin;
+            font-family: cursive;
+            text-decoration: underline;
+            color: white;
+            background-color: rgb(7 7 7 / 50%);
+            font-weight: 900;
+            /* -webkit-text-stroke: 2px rgb(38, 84, 99); */
+            /* -webkit-background-image: url(/HTML/bl.png); */
+            width: 50%;
+            margin: 0 auto;
+            border: 3pxx solid white;
+            border-radius: 10px;
+            box-shadow: 4px 0px 1px 57px rgb(158 149 168 / 50%);
+            border: 2px solid rebeccapurple;
+            text-transform: math-auto;
+            line-height: 83px;
+            padding-bottom: 23px;
+        }
+
+        #indeterminate span>h3 {
+            font-weight: 900;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+
+        <!-- <div class="header-main-box">
+            <div class="header-box">
+                <div class="header-second-box">
+
+                </div>
+            </div>
+
+        </div> -->
+        <div class="third-header-box"
+            style="background-color: black;margin-top: 0px;padding-top: 26px; position: relative; height: 103px;">
+            <!-- logo -->
+            <div class="div-logo-one">
+
+                <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-light.png"
+                    style="position: absolute;">
+                <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png" alt="">
+            </div>
+
+
+
+            <div id="solidbar">
+                <i class="fa-solid fa-bars fa-shake" onclick="solidbarLasticon()" style="color: white;"></i>
+            </div>
+
+
+
+
+            <!-- drop-down -->
+
+            <div class="drop-list">
+                <ul class="drop-list-ul">
+                    <li type="none" class="">
+                        <div id="ddp">
+                            <a href="" style="color: #eeaf14;padding: 10px;">
+                                HOME &nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home1</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home2</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home3</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home4</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home5</a></div><br><br>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Provider Page&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">provider style 1</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">provider style 2</a></div><br><br>
+                                <!-- <hr><br> -->
+
+                                <!-- <hr> -->
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Provider Account&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">availibity</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">booking</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">business hours</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">invoice</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">my service</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">profile settings</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">schedule</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">service area </a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">set unavailibity</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">team mambers</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">upgrade account</a></div><br><br>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Features&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">add to favorites</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">auto compiler </a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">featured providers</a></div><br><br>
+                                <hr><br>
+
+                                <div id="idalinsttupe"><a href="" class="link1">buking feature in 4 steps</a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">feedback for rach bookings </a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">bully ajax based providers
+                                        sections</a><br></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">fully responsive</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">google map intigration</a><br></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">guest booking systems</a><br></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">invoice generation and payment
+                                        system</a> <br></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">multilanguage</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">otp system to pravent fake
+                                        booking</a><br></div><br><br>
+                                <br>
+                                <hr>
+                                l̥ō
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/blog1.html"
+                        style="color: white;">Blog</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/contactus2.html"
+                        style="color: white;">Contact Us</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/post3.html"
+                        style="color: white;">Post a Job</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/job4.html"
+                        style="color: white;">Jobs</a></li>
+                </ul>
+
+            </div>
+
+            <!-- this is a button -->
+            <div class="button-box">
+                <ul
+                    style="display: flex;flex-wrap: wrap;justify-content: space-evenly;min-width: 217px;/* border: 7px solid indianred; */">
+                    <!-- <li><button> -->
+                    <li type="none" id="btnid"><button onclick="MainBoxDivLi()"><i class="fa-solid fa-user"></i> LOGIN
+                        </button></li>&nbsp;
+                    <li type="none" id="btnid"><button onclick="ProviderCostomer()"><i class="fa-solid fa-plus"></i>SING
+                            UP</button></li>
+                </ul>
+            </div>
+
+
+            <br><br><br><br><br>
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus velit aliquam quos rerum tempore cumque reprehenderit aperiam! Modi eum corporis atque sit. Minus cumque quos consequuntur architecto blanditiis quam iure. -->
+            <!-- </div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a illum doloremque dicta molestiae amet enim voluptatem quidem ut harum? Suscipit placeat reprehenderit odio harum blanditiis! Enim quibusdam sit mollitia? -->
+
+            <!-- next content--=Hire Experts & Get Your Job Done -->
+
+            <div class="Hire-Experts">
+                <div class="Get-Your-Job-Done">
+                    <!-- <div id="get-id-drop-psection">
+                        <p> Hire <span style="color: #eeaf14;">Experts</span> &</p>
+                        <h1
+                            style="color:none;/* text-decoration: underline; */  padding-bottom: 15px; border-bottom: 2px solid;color: #eeaf14;">
+                            <span style="color: white;">Get Your Job Done</span>
+                        </h1>
+
+                    </div> -->
+
+
+
+
+                    <!-- from b0x get -->
+                    <!-- main-box -->
+                    <div id="boxDiveVisibility">
+                        <div class="blue-box">
+                            <div id="blue-span">
+                                <span id="login-blue">Login</span>
+                                <span id="solid-fa"><i class="fa-solid fa-x" onclick="MainBoxDivLi()"></i></span>
+                                <br><br>
+                                <!-- <input type="text" name="" id=""> -->
+                                <div>
+                                    <div class="icon-blue-username">
+                                        <span class="solid-icon-user-blur"><i class="fa-solid fa-user"
+                                                style="color: #2a2b2c;"></i></span>&nbsp;&nbsp;
+                                        <span style="color: gray;"><input type="text" name="Username"
+                                                placeholder="Username" id=""
+                                                style="outline: none; border: none;"></span>
+                                    </div>
+                                    <!-- <br> -->
+                                    <div class="icon-blue-username">
+                                        <span class="solid-icon-user-blur"><i class="fa-solid fa-lock"
+                                                style="color: #2c2d30;"></i></span>&nbsp;&nbsp;
+                                        <span style="color: gray;"><input type="password" name="Username"
+                                                placeholder="Password" id=""
+                                                style="outline: none; border: none;"></span>
+                                    </div>
+                                    <!-- <br> -->
+                                    <span style="text-align: center;">
+                                        <button class="login-btn-color-yellow">LOGIN</button>
+                                        <a href=""> Don't have an account?<small>| Forgot Password</small></a>
+                                    </span>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- from b0x get sing-up -->
+
+                    <div id="box-sing-up">
+                        <div class="sing-up-box-form">
+                            <div class="main-sing-up-box">
+                                <span id="login-blue2">Sign up</span>
+                                <span id="solid-fa"><i class="fa-solid fa-x" id="iconlast-sign-up"
+                                        onclick="ProviderCostomer()"></i></span>
+                            </div>
+                            <!-- <br> -->
+                            <div
+                                style="/* margin-top: 20px; */border: 1px solid gray;background: white;min-height: 625px;width: 99.6%;">
+                                <br>
+                                <div class="icon-blue-provider">
+                                    <span class="btnprovider"><button>PROVIDER </button></span>&nbsp;&nbsp;
+                                    <span class="btnprovider"><button>CUSTOMER </button></span>
+                                    <!-- <span><button></button></span> -->
+                                </div>
+                                <!-- <div class="main-sign-up-border-box"> -->
+                                <!-- <br> -->
+                                <div id="surajsignup">
+                                    <!-- <br> -->
+                                    <!-- <span class="btnprovider"><button>PROVIDER  </button></span>&nbsp;&nbsp; -->
+
+
+                                    <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam quos magnam totam exercitationem porro repellat deleniti veritatis praesentium odit, nobis ad in quidem possimus aliquid sequi magni et tempore! -->
+                                    <input type="text" name="" id="" placeholder="Company Name" class="company">
+                                    <span class="input-two"><input type="text" placeholder="Last Name"> </span><span
+                                        class="input-one"><input type="text" placeholder="First Name"></span>
+                                    <br>sdfg
+                                    <span class="input-two"><input type="text" placeholder="Email"> </span><span
+                                        class="input-one"><input type="text" placeholder="Username"></span>
+                                    <br><br>
+                                    <span class="input-two"><input type="text" placeholder="Confirm Password">
+                                    </span><span class="input-one"><input type="text" placeholder="Password"></span>
+                                    <!-- <br>Asdas -->
+                                    <input type="tel;" name="" id="" placeholder="Mobile" class="company">
+                                    <!-- <br> -->
+                                    <!-- <br> -->
+                                    <span class="input-two"><select name="Category" id="select-option">
+                                            <Option>select a package</Option>
+                                        </select> </span> <span class="input-two"><select name="Category"
+                                            id="select-option-two">
+                                            <Option>Category</Option>
+                                        </select> </span>
+                                    <br><br>
+                                    <span style="text-align:center">
+                                        <!-- <br> -->
+                                        <button class="classsignupoutlinborder">sign up</button>
+                                        <small id="small">Already Registered?</small>
+                                    </span>
+                                </div>
+                                <!-- https://www.msn.com/en-in/sports/cricket/ipl?ocid=winp2fptaskbar&cvid=06de50b557754ca3a8572803e6487c46 -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- menubar -->
+                    <div id="menu-bar-responsive">
+                        <div class="menu-bar-responsive1">
+
+
+                            <div class="menu-bar-responsive3">
+
+                                <ul
+                                    style="display: flex;flex-wrap: wrap;justify-content: space-evenly;width: 98%;/* border: 7px solid indianred; left: 0;">
+                                    <!-- <li><button> -->
+                                    <li type="none" id="btnid2"><button onclick="MainBoxDivLipop()"><i
+                                                class="fa-solid fa-user"></i> LOGIN
+                                        </button></li><br>
+                                    <li type="none" id="btnid2"><button onclick="MainBoxDivLilast()"><i
+                                                class="fa-solid fa-plus"></i>SING
+                                            UP</button></li>
+                                </ul>
+                                <div id="boxDiveVisibility2">
+                                    <div class="blue-box">
+                                        <div id="blue-span">
+                                            <span id="login-blue">Login</span>
+                                            <span id="solid-fa"><i class="fa-solid fa-x"
+                                                    onclick="MainBoxDivLipop()"></i></span>
+                                            <br><br>
+                                            <!-- <input type="text" name="" id=""> -->
+                                            <div>
+                                                <div class="icon-blue-username">
+                                                    <span class="solid-icon-user-blur"><i class="fa-solid fa-user"
+                                                            style="color: #2a2b2c;"></i></span>&nbsp;&nbsp;
+                                                    <span style="color: gray;"><input type="text" name="Username"
+                                                            placeholder="Username" id=""
+                                                            style="outline: none; border: none;"></span>
+                                                </div>
+                                                <!-- <br> -->
+                                                <div class="icon-blue-username">
+                                                    <span class="solid-icon-user-blur"><i class="fa-solid fa-lock"
+                                                            style="color: #2c2d30;"></i></span>&nbsp;&nbsp;
+                                                    <span style="color: gray;"><input type="password" name="Username"
+                                                            placeholder="Password" id=""
+                                                            style="outline: none; border: none;"></span>
+                                                </div>
+                                                <!-- <br> -->
+                                                <span style="text-align: center;">
+                                                    <button class="login-btn-color-yellow">LOGIN</button>
+                                                    <a href="#"> Don't have an account?<small>| Forgot
+                                                            Password</small></a>
+                                                </span>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <span><button>LOGIN</button></span><span><button>SIGNUP</button></span> -->
+                            </div>
+
+
+
+
+
+                            <!-- menu-bar-end -->
+
+
+
+                            <div id="boxDiveVisibilitylast">
+                                <div id="Suraj-sign-up-box-Second">
+                                    <span style="float: inline-start;padding-left: 15px;">Sign up</span>
+                                    <span style="float: inline-end;padding-right: 15px;"> <i class="fa-solid fa-x"
+                                            onclick="MainBoxDivLilast()"></i></span>
+                                </div>
+
+                                <div id="Suraj-sign-up-box-third">
+
+
+
+                                    <div class="btn-bluelast-thir">
+                                        <button style="padding: 14px;">providers</button> &nbsp;
+                                        <button
+                                            style="border-left: 1px solid gray;border-bottom: 1px solid gray;">customer</button>
+                                    </div>
+                                    <div id="Suraj-sign-up-box-fourth">
+                                        <br>
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Company Name">
+                                        <!-- <br> -->
+                                        <input type="text" name="" id="Companylasthiden" placeholder="First Name">
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Last Name">
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Username">
+                                        <input type="email" name="" id="Companylasthiden" placeholder="Email">
+                                        <input type="password" name="" id="Companylasthiden" placeholder="Password">
+                                        <input type="password" name="" id="Companylasthiden"
+                                            placeholder="Confirm Password">
+                                        <input type="tel" name="" id="Companylasthiden" placeholder="Email">
+
+                                        <select name="Category" id="select-option-qwer">
+                                            <Option>select A package</Option>
+                                        </select> <br>
+                                        <select name="Category" id="select-option-two--last">
+                                            <Option>Category</Option>
+
+                                        </select>
+                                        <span style="text-align:center">
+                                            <!-- <br> -->
+                                            <button class="classsignupoutlinborder--last">sign up</button><br>
+                                            <small id="small---last">Already Registered?</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div id="whitespace">
+                                <div id="whitespacetwo">
+                                    <!-- lorem*5 -->
+                                    <!-- <input type="text" name="" placeholder="Home" id=""   > -->
+                                    <div id="home-span">
+                                        <p id="P2">Home <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhome()"></i></p><br>
+                                        <!-- <ul> -->
+
+                                        <div id="myonMyiconhome">
+                                            <p class="myhome">Home </p>
+                                            <p class="myhome">Home </p>
+
+                                        </div>
+                                        <br>
+                                        <!-- <p>Home <i class="fa-solid fa-caret-down fa-beat" id="myicon"></i></p> -->
+
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P3">provider page <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhometwo()"></i></p><br>
+                                        <div id="myonMyiconhometwo">
+                                            <p class="myhome2">provider style 1</p>
+                                            <p class="myhome2">provider style 2</p>
+
+                                        </div>
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P4">provider account <i class="fa-solid fa-caret-down fa-beat"
+                                                id="myicon" onclick="onMyiconhomethe()"></i></p><br>
+                                        <div id="myonMyiconhomethe">
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+
+                                        </div>
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P5">features <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomefor()"></i></p><br>
+                                        <div id="myonMyiconhomefor">
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P6">blog <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomefive()"></i></p><br>
+                                        <div id="myonMyiconhomefive">
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P7">contact us <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomesix()"></i></p><br>
+                                        <div id="myonMyiconhomesix">
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P8">post a job <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomeseven()"></i></p><br>
+                                        <div id="myonMyiconhomeseven">
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P9">jobs <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomeeight()"></i></p><br>
+                                        <div id="myonMyiconhomeeight">
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- ending sing-up -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        </div>
+        <!-- <br> -->
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+
+
+
+
+
+    <section>
+        <div class="contact-us-conatner">
+            <div class="contact-us-main">
+                <div class="contact-main-hone">
+                    <h1 id="indeterminate">
+                        Job <br><span>
+                            <h3>Freshers Filter By Job Type</h3>
+                        </span>
+                    </h1>
+
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <!-- second -->
+    </section>
+    <footer>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0 pb-xl-3">
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4" style="background:white;">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/security.svg"
+                            width="40" alt="Comments">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Comments on Tasks</h3>
+                        <p class="mb-0">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                    </div>
+                </div>
+                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block">
+                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/tasks.svg"
+                            width="40" alt="Analytics">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Tasks Analytics</h3>
+                        <p class="mb-0">Non imperdiet facilisis nulla tellus Morbi scelerisque eget adipiscing
+                            vulputate.</p>
+                    </div>
+                </div>
+                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-md-block">
+                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/notifications.svg"
+                            width="40" alt="Group">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Multiple Assignees</h3>
+                        <p class="mb-0">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                    </div>
+                </div>
+                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block d-md-none">
+                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block">
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/group.svg"
+                            width="40" alt="Notifications">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Notifications</h3>
+                        <p class="mb-0">Diam, suspendisse velit cras ac. Lobortis diam volutpat, eget pellentesque
+                            viverra.</p>
+                    </div>
+                </div>
+                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-md-block">
+                <hr class="position-absolute top-100 start-0 w-100 d-none d-sm-block d-md-none">
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/analytics.svg"
+                            width="40" alt="Tasks">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Sections &amp; Subtasks</h3>
+                        <p class="mb-0">Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus.</p>
+                    </div>
+                </div>
+                <hr class="position-absolute top-0 end-0 w-1 h-100 d-none d-sm-block">
+            </div>
+
+            <!-- Item -->
+            <div class="col position-relative">
+                <div class="card border-0 bg-transparent rounded-0 p-md-1 p-xl-3">
+                    <div class="d-table  rounded-3 p-3 mx-auto mt-3 mt-md-4">
+                        <img src="https://silicon.createx.studio/assets/img/landing/saas-2/features/comments.svg"
+                            width="40" alt="Security">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 pb-1 mb-2">Data Security</h3>
+                        <p class="mb-0">Aliquam malesuada neque eget elit nulla vestibulum nunc cras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <footer>
+
+
+        <div id="pngimglastfooter">
+            <div class="bacground-latfooyer"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Beautiful, hand-crafted designs to get you started_</h2>
+                    <p>Can't decide which one to choose? You have the freedom to choose from pre-built elements from
+                        different demos to mix them together in unlimited ways. Start making your creative website right
+                        now!</p>
+                </div>
+                <ul class="list-group-inline list-group-icon-primary-bg justify-content-center w-100 d-none d-md-flex">
+                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Hand-crafted Design</li>
+                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Lifetime License</li>
+                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Top-Notch Support</li>
+                    <li class="list-group-item"><span><i class="fas fa-check"></i></span>Free Updates</li>
+                </ul>
+            </div>
+
+            <!-- Demo item -->
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center mt-5">
+                    <p>Start building beautiful, eye-catchy websites in minutes. <u><a
+                                href="https://themes.getbootstrap.com/product/folio-creative-agency-portfolio-theme/"
+                                class="text-dark text-primary-hover">Grab Folio now.</a></u></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <br><br><br><br><br><br>
+    <footer class="main-footer-last-type">
+
+
+
+        <div class="main-footer-last-type-div">
+
+            <div class="main-footer-last-type-grid-type">
+
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Site Links</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Site Links</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Popular Cities</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="">Ballston Lake</a></li>
+                        <li><a href="">Batumi</a></li>
+                        <li><a href="">Brooklyn</a></li>
+                        <li><a href="">Cambridge</a></li>
+                        <li><a href="">elmansoura</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Contact Info</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">+41 232 525 5257</a></li>
+                        <li><a href="#">+41 856 525 5369</a></li>
+                        <li><a href="#">hello@Servicefinder.com </a></li>
+                    </ul>
+                </div>
+                <!-- <div class="main-footer-last-type-maain-grid-type"></div> -->
+                <!-- <div class="main-footer-last-type-maain-grid-type"></div> -->
+
+            </div>
+            <br><br>
+
+            <div class="provider-logo-footer">
+                <div class="sf-footer-bottom-section">
+                    <div class="sf-f-logo logo-footer">
+                        <a href=""> <img
+                                src="http://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png">
+                        </a>
+                    </div>
+                    <div class="sf-f-copyright">
+                        <span>Copyright 2024 | All Rights Reserved</span>
+                    </div>
+                    <div class="sf-f-social">
+                        <ul class="socila-box">
+                            <li><i class="fa-brands fa-facebook fa-beat" style="color: #063151;"></i></li>
+                            <li><i class="fa-brands fa-linkedin fa-beat-fade" style="color: blue;"></i></li>
+                            <li><i class="fa-brands fa-twitter fa-bounce" style="color: #74C0FC;"></i></li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi deserunt ut, aut velit earum consequuntur reprehenderit explicabo saepe placeat eos magni quod quos illum nulla nesciunt consectetur ad sequi! -->
+    </footer>
+
+</body>
+
+</html>

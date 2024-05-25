@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/Portfolio/media.css"> -->
+    <script src="index.js"></script>
+    <link rel="icon" type="image/png" href="/Portfolio/Screenshot (1).png">
+    <title>Contact</title>
+</head>
+<style>
+    .contact-us-conatner {
+        width: 100%;
+        height: 400px;
+        border: 2PX SOLID white;
+        /* position:absolute; */
+        margin: 0 auto;
+
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/job-banner.jpg);
+
+    }
+
+    .contact-us-main {
+        width: 100%;
+        /* position: absolute; */
+        height: 100%;
+        background-color: rgba(10 10 10 0.6);
+        /* line-height: 41vmin; */
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+        /* color: #fff; */
+        background: rgb(67 3 34 / 50%);
+    }
+
+    .contact-main-hone {
+        color: white;
+        /* text-align: center; */
+        position: relative;
+        /* left: 50%;
+        right: 50%;
+        top: 50%;
+        bottom: 50%; */
+    }
+
+    #indeterminate {
+
+        display: block;
+        position: relative;
+        cursor: pointer;
+        top: 137px;
+        border: 137px;
+        font-size: 7vmin;
+        font-family: cursive;
+
+        -webkit-text-stroke: 2px red;
+        /* -webkit-background-image: url(/HTML/bl.png); */
+    }
+
+    .container {
+
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-center h2 {
+
+        line-height: 1.5;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 5vmin;
+        line-height: 50px;
+        color: #022279;
+    }
+
+    .section-head h2 {
+        -webkit-text-stroke: 2px #c3bad9;
+
+    }
+
+    .section-content {
+        margin-top: 50px;
+    }
+
+    .sf-contact-info-wrap>.row {
+        /* display: -ms-flexbox; */
+        display: flex;
+        /* -ms-flex-wrap: wrap; */
+        flex-wrap: wrap;
+    }
+
+    .row>[class*="col-"] {
+        /* display: -ms-flexbox; */
+        /* display: flex; */
+        margin-bottom: 30px;
+    }
+
+    .col-md-4 {
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+    .sf-contact-info-box {
+        width: 100%;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(46, 13, 79, 0.1);
+        text-align: center;
+        font-family: sans-serif;
+        padding: 40px 30px;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFB600;
+    }
+
+    .sf-contact-icon {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+    }
+
+    .sf-contact-icon span {
+        display: block;
+        line-height: 60px;
+    }
+
+    .sf-contact-icon span img {
+        height: 60px;
+    }
+
+    .sf-contact-info-box {
+        width: 100%;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(46, 13, 79, 0.1);
+        text-align: center;
+        padding: 40px 30px;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFB600;
+    }
+
+    .sf-contact-info-box .sf-contact-info p {
+        margin: 0px auto 0px;
+        max-width: 250px;
+    }
+
+    .sf-contact-info-box .sf-contact-info .sf-title {
+        font-size: 24px;
+        /* -webkit-text-stroke: 2px red; */
+
+        margin: 20px 0px;
+    }
+
+    .sf-contact-form {
+        max-width: 960px;
+        margin: 0px auto;
+    }
+
+    .margin-b-30 {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+        display: none;
+    }
+
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        /* float: inline-end; */
+    }
+
+    .form-control {
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+        height: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 9px 12px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    .sf-contact-form .form-control {
+        border-radius: 14px;
+        border: 2px solid #c2c8d7;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .form-control-feedback {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+        z-index: 2;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+
+    .col-md-12 {
+
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form-control {
+        height: 190px;
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+        height: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 9px 12px;
+
+    }
+
+    .form-control {
+        border-radius: 14px;
+        border: 2px solid #c2c8d7;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .sf-captcha-wrap {
+        max-width: 430px;
+        clear: both;
+        margin: auto;
+    }
+
+    .margin-b-20 {
+        float: left;
+        margin-bottom: 20px;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+    .refreshCaptcha {
+        color: #162F96;
+        font-weight: 600;
+    }
+
+    .refreshCaptcha {
+        color: #162F96;
+        font-weight: 600;
+    }
+
+    .input-group {
+        position: relative;
+        display: table;
+        border-collapse: separate;
+        margin: 0 auto;
+    }
+
+    .fa-pencil {
+        display: none;
+    }
+
+    .sf-contact-form .sf-contact-submit-btn {
+        max-width: 188px;
+        margin: 0px auto;
+    }
+</style>
+
+<body>
+    <header>
+
+
+        <!-- <div class="header-main-box">
+            <div class="header-box">
+                <div class="header-second-box">
+
+                </div>
+            </div>
+
+        </div> -->
+        <div class="third-header-box"
+            style="background-color: black;margin-top: 0px;padding-top: 26px; position: relative; height: 103px;">
+            <!-- logo -->
+            <div class="div-logo-one">
+
+                <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-light.png"
+                    style="position: absolute;">
+                <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png" alt="">
+            </div>
+
+
+
+            <div id="solidbar">
+                <i class="fa-solid fa-bars fa-shake" onclick="solidbarLasticon()" style="color: white;"></i>
+            </div>
+
+
+
+
+            <!-- drop-down -->
+
+            <div class="drop-list">
+                <ul class="drop-list-ul">
+                    <li type="none" class="">
+                        <div id="ddp">
+                            <a href="" style="color: #eeaf14;padding: 10px;">
+                                HOME &nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home1</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home2</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home3</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home4</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">Home5</a></div><br><br>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Provider Page&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">provider style 1</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">provider style 2</a></div><br><br>
+                                <!-- <hr><br> -->
+
+                                <!-- <hr> -->
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Provider Account&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">availibity</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">booking</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">business hours</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">invoice</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">my service</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">profile settings</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">schedule</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">service area </a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">set unavailibity</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">team mambers</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">upgrade account</a></div><br><br>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none">
+
+                        <div id="ddp">
+                            <a href="#home" id="link-a">
+                                &nbsp;&nbsp;Features&nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
+                            </a>
+                            <div class="dpdbmb"><br>
+                                <!-- <ul></ul> -->
+                                <div id="idalinsttupe"><a href="" class="link1">add to favorites</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">auto compiler </a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">featured providers</a></div><br><br>
+                                <hr><br>
+
+                                <div id="idalinsttupe"><a href="" class="link1">buking feature in 4 steps</a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">feedback for rach bookings </a></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">bully ajax based providers
+                                        sections</a><br></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">fully responsive</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">google map intigration</a><br></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">guest booking systems</a><br></div>
+                                <br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">invoice generation and payment
+                                        system</a> <br></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">multilanguage</a></div><br><br>
+                                <hr><br>
+                                <div id="idalinsttupe"><a href="" class="link1">otp system to pravent fake
+                                        booking</a><br></div><br><br>
+                                <br>
+                                <hr>
+                                l̥ō
+                            </div>
+
+                        </div>
+                    </li>
+                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/blog1.html"
+                        style="color: white;">Blog</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/contactus2.html"
+                        style="color: white;">Contact Us</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/post3.html"
+                        style="color: white;">Post a Job</a></li>
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/job4.html"
+                        style="color: white;">Jobs</a></li>
+                </ul>
+
+            </div>
+
+            <!-- this is a button -->
+            <div class="button-box">
+                <ul
+                    style="display: flex;flex-wrap: wrap;justify-content: space-evenly;min-width: 217px;/* border: 7px solid indianred; */">
+                    <!-- <li><button> -->
+                    <li type="none" id="btnid"><button onclick="MainBoxDivLi()"><i class="fa-solid fa-user"></i> LOGIN
+                        </button></li><br>
+                    <li type="none" id="btnid"><button onclick="ProviderCostomer()"><i class="fa-solid fa-plus"></i>SING
+                            UP</button></li>
+                </ul>
+            </div>
+
+
+            <br><br><br><br><br>
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus velit aliquam quos rerum tempore cumque reprehenderit aperiam! Modi eum corporis atque sit. Minus cumque quos consequuntur architecto blanditiis quam iure. -->
+            <!-- </div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque a illum doloremque dicta molestiae amet enim voluptatem quidem ut harum? Suscipit placeat reprehenderit odio harum blanditiis! Enim quibusdam sit mollitia? -->
+
+            <!-- next content--=Hire Experts & Get Your Job Done -->
+
+            <div class="Hire-Experts">
+                <div class="Get-Your-Job-Done">
+                    <!-- <div id="get-id-drop-psection">
+                        <p> Hire <span style="color: #eeaf14;">Experts</span> &</p>
+                        <h1
+                            style="color:none;/* text-decoration: underline; */  padding-bottom: 15px; border-bottom: 2px solid;color: #eeaf14;">
+                            <span style="color: white;">Get Your Job Done</span>
+                        </h1>
+
+                    </div> -->
+
+
+
+
+                    <!-- from b0x get -->
+                    <!-- main-box -->
+                    <div id="boxDiveVisibility">
+                        <div class="blue-box">
+                            <div id="blue-span">
+                                <span id="login-blue">Login</span>
+                                <span id="solid-fa"><i class="fa-solid fa-x" onclick="MainBoxDivLi()"></i></span>
+                                <br><br>
+                                <!-- <input type="text" name="" id=""> -->
+                                <div>
+                                    <div class="icon-blue-username">
+                                        <span class="solid-icon-user-blur"><i class="fa-solid fa-user"
+                                                style="color: #2a2b2c;"></i></span>&nbsp;&nbsp;
+                                        <span style="color: gray;"><input type="text" name="Username"
+                                                placeholder="Username" id=""
+                                                style="outline: none; border: none;"></span>
+                                    </div>
+                                    <!-- <br> -->
+                                    <div class="icon-blue-username">
+                                        <span class="solid-icon-user-blur"><i class="fa-solid fa-lock"
+                                                style="color: #2c2d30;"></i></span>&nbsp;&nbsp;
+                                        <span style="color: gray;"><input type="password" name="Username"
+                                                placeholder="Password" id=""
+                                                style="outline: none; border: none;"></span>
+                                    </div>
+                                    <!-- <br> -->
+                                    <span style="text-align: center;">
+                                        <button class="login-btn-color-yellow">LOGIN</button>
+                                        <a href=""> Don't have an account?<small>| Forgot Password</small></a>
+                                    </span>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- from b0x get sing-up -->
+
+                    <div id="box-sing-up">
+                        <div class="sing-up-box-form">
+                            <div class="main-sing-up-box">
+                                <span id="login-blue2">Sign up</span>
+                                <span id="solid-fa"><i class="fa-solid fa-x" id="iconlast-sign-up"
+                                        onclick="ProviderCostomer()"></i></span>
+                            </div>
+                            <!-- <br> -->
+                            <div
+                                style="/* margin-top: 20px; */border: 1px solid gray;background: white;min-height: 625px;width: 99.6%;">
+                                <br>
+                                <div class="icon-blue-provider">
+                                    <span class="btnprovider"><button>PROVIDER </button></span>&nbsp;&nbsp;
+                                    <span class="btnprovider"><button>CUSTOMER </button></span>
+                                    <!-- <span><button></button></span> -->
+                                </div>
+                                <!-- <div class="main-sign-up-border-box"> -->
+                                <!-- <br> -->
+                                <div id="surajsignup">
+                                    <!-- <br> -->
+                                    <!-- <span class="btnprovider"><button>PROVIDER  </button></span>&nbsp;&nbsp; -->
+
+
+                                    <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quam quos magnam totam exercitationem porro repellat deleniti veritatis praesentium odit, nobis ad in quidem possimus aliquid sequi magni et tempore! -->
+                                    <input type="text" name="" id="" placeholder="Company Name" class="company">
+                                    <span class="input-two"><input type="text" placeholder="Last Name"> </span><span
+                                        class="input-one"><input type="text" placeholder="First Name"></span>
+                                    <br>sdfg
+                                    <span class="input-two"><input type="text" placeholder="Email"> </span><span
+                                        class="input-one"><input type="text" placeholder="Username"></span>
+                                    <br><br>
+                                    <span class="input-two"><input type="text" placeholder="Confirm Password">
+                                    </span><span class="input-one"><input type="text" placeholder="Password"></span>
+                                    <!-- <br>Asdas -->
+                                    <input type="tel;" name="" id="" placeholder="Mobile" class="company">
+                                    <!-- <br> -->
+                                    <!-- <br> -->
+                                    <span class="input-two"><select name="Category" id="select-option">
+                                            <Option>select a package</Option>
+                                        </select> </span> <span class="input-two"><select name="Category"
+                                            id="select-option-two">
+                                            <Option>Category</Option>
+                                        </select> </span>
+                                    <br><br>
+                                    <span style="text-align:center">
+                                        <!-- <br> -->
+                                        <button class="classsignupoutlinborder">sign up</button>
+                                        <small id="small">Already Registered?</small>
+                                    </span>
+                                </div>
+                                <!-- https://www.msn.com/en-in/sports/cricket/ipl?ocid=winp2fptaskbar&cvid=06de50b557754ca3a8572803e6487c46 -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- menubar -->
+                    <div id="menu-bar-responsive">
+                        <div class="menu-bar-responsive1">
+
+
+                            <div class="menu-bar-responsive3">
+
+                                <ul
+                                    style="display: flex;flex-wrap: wrap;justify-content: space-evenly;width: 98%;/* border: 7px solid indianred; left: 0;">
+                                    <!-- <li><button> -->
+                                    <li type="none" id="btnid2"><button onclick="MainBoxDivLipop()"><i
+                                                class="fa-solid fa-user"></i> LOGIN
+                                        </button></li><br>
+                                    <li type="none" id="btnid2"><button onclick="MainBoxDivLilast()"><i
+                                                class="fa-solid fa-plus"></i>SING
+                                            UP</button></li>
+                                </ul>
+                                <div id="boxDiveVisibility2">
+                                    <div class="blue-box">
+                                        <div id="blue-span">
+                                            <span id="login-blue">Login</span>
+                                            <span id="solid-fa"><i class="fa-solid fa-x"
+                                                    onclick="MainBoxDivLipop()"></i></span>
+                                            <br><br>
+                                            <!-- <input type="text" name="" id=""> -->
+                                            <div>
+                                                <div class="icon-blue-username">
+                                                    <span class="solid-icon-user-blur"><i class="fa-solid fa-user"
+                                                            style="color: #2a2b2c;"></i></span>&nbsp;&nbsp;
+                                                    <span style="color: gray;"><input type="text" name="Username"
+                                                            placeholder="Username" id=""
+                                                            style="outline: none; border: none;"></span>
+                                                </div>
+                                                <!-- <br> -->
+                                                <div class="icon-blue-username">
+                                                    <span class="solid-icon-user-blur"><i class="fa-solid fa-lock"
+                                                            style="color: #2c2d30;"></i></span>&nbsp;&nbsp;
+                                                    <span style="color: gray;"><input type="password" name="Username"
+                                                            placeholder="Password" id=""
+                                                            style="outline: none; border: none;"></span>
+                                                </div>
+                                                <!-- <br> -->
+                                                <span style="text-align: center;">
+                                                    <button class="login-btn-color-yellow">LOGIN</button>
+                                                    <a href="#"> Don't have an account?<small>| Forgot
+                                                            Password</small></a>
+                                                </span>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <span><button>LOGIN</button></span><span><button>SIGNUP</button></span> -->
+                            </div>
+
+
+
+
+
+                            <!-- menu-bar-end -->
+
+
+
+                            <div id="boxDiveVisibilitylast">
+                                <div id="Suraj-sign-up-box-Second">
+                                    <span style="float: inline-start;padding-left: 15px;">Sign up</span>
+                                    <span style="float: inline-end;padding-right: 15px;"> <i class="fa-solid fa-x"
+                                            onclick="MainBoxDivLilast()"></i></span>
+                                </div>
+
+                                <div id="Suraj-sign-up-box-third">
+
+
+
+                                    <div class="btn-bluelast-thir">
+                                        <button style="padding: 14px;">providers</button> &nbsp;
+                                        <button
+                                            style="border-left: 1px solid gray;border-bottom: 1px solid gray;">customer</button>
+                                    </div>
+                                    <div id="Suraj-sign-up-box-fourth">
+                                        <br>
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Company Name">
+                                        <!-- <br> -->
+                                        <input type="text" name="" id="Companylasthiden" placeholder="First Name">
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Last Name">
+                                        <input type="text" name="" id="Companylasthiden" placeholder="Username">
+                                        <input type="email" name="" id="Companylasthiden" placeholder="Email">
+                                        <input type="password" name="" id="Companylasthiden" placeholder="Password">
+                                        <input type="password" name="" id="Companylasthiden"
+                                            placeholder="Confirm Password">
+                                        <input type="tel" name="" id="Companylasthiden" placeholder="Email">
+
+                                        <select name="Category" id="select-option-qwer">
+                                            <Option>select A package</Option>
+                                        </select> <br>
+                                        <select name="Category" id="select-option-two--last">
+                                            <Option>Category</Option>
+
+                                        </select>
+                                        <span style="text-align:center">
+                                            <!-- <br> -->
+                                            <button class="classsignupoutlinborder--last">sign up</button><br>
+                                            <small id="small---last">Already Registered?</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div id="whitespace">
+                                <div id="whitespacetwo">
+                                    <!-- lorem*5 -->
+                                    <!-- <input type="text" name="" placeholder="Home" id=""   > -->
+                                    <div id="home-span">
+                                        <p id="P2">Home <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhome()"></i></p><br>
+                                        <!-- <ul> -->
+
+                                        <div id="myonMyiconhome">
+                                            <p class="myhome">Home </p>
+                                            <p class="myhome">Home </p>
+
+                                        </div>
+                                        <br>
+                                        <!-- <p>Home <i class="fa-solid fa-caret-down fa-beat" id="myicon"></i></p> -->
+
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P3">provider page <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhometwo()"></i></p><br>
+                                        <div id="myonMyiconhometwo">
+                                            <p class="myhome2">provider style 1</p>
+                                            <p class="myhome2">provider style 2</p>
+
+                                        </div>
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P4">provider account <i class="fa-solid fa-caret-down fa-beat"
+                                                id="myicon" onclick="onMyiconhomethe()"></i></p><br>
+                                        <div id="myonMyiconhomethe">
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+                                            <p class="myhome3">Home </p>
+
+                                        </div>
+                                    </div>
+                                    <div id="home-span">
+                                        <p id="P5">features <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomefor()"></i></p><br>
+                                        <div id="myonMyiconhomefor">
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+                                            <p class="myhome4">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P6">blog <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomefive()"></i></p><br>
+                                        <div id="myonMyiconhomefive">
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+                                            <p class="myhome5">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P7">contact us <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomesix()"></i></p><br>
+                                        <div id="myonMyiconhomesix">
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+                                            <p class="myhome6">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P8">post a job <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomeseven()"></i></p><br>
+                                        <div id="myonMyiconhomeseven">
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+                                            <p class="myhome7">Home </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="home-span">
+                                        <p id="P9">jobs <i class="fa-solid fa-caret-down fa-beat" id="myicon"
+                                                onclick="onMyiconhomeeight()"></i></p><br>
+                                        <div id="myonMyiconhomeeight">
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+                                            <p class="myhome8">Home </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- ending sing-up -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        </div>
+        <!-- <br> -->
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+    <section>
+        <div class="contact-us-conatner">
+            <div class="contact-us-main">
+                <div class="contact-main-hone">
+                    <h1 id="indeterminate">
+                        Contact Us <br><span>
+                            <h3>Home > Contact Us</h3>
+                        </span>
+                    </h1>
+
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <!-- second -->
+
+
+
+        <div class="section-full p-t80 p-b50">
+            <div class="container">
+
+                <div class="section-head text-center">
+                    <h2 class="sf-title">Contact Information</h2>
+                </div>
+
+                <div class="section-content">
+
+                    <div class="sf-contact-info-wrap">
+                        <div class="row">
+
+
+                            <!-- COLUMNS 1 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/1.png"></span>
+                                    </div>
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Mailing Address</h4>
+                                        <p>121 King Street, Melbourne Victoria 3000 Australiaa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 2 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/2.png"></span>
+                                    </div>
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Email Info</h4>
+                                        <p>info@brandcoin.comm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- COLUMNS 3 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/1.png"></span>
+                                    </div>
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Phone Number</h4>
+                                        <p>0800-123456 (24/7 Support Line) 0800-1236544</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sf-contact-form-wrap">
+
+                        <div class="sf-contact-form">
+                            <div class="sf-con-form-title text-center">
+                                <h2 class="margin-b-30">Contact Information</h2>
+                            </div>
+                            <form method="post" class="contactform bv-form" novalidate="novalidate"><button
+                                    type="submit" class="bv-hidden-submit"
+                                    style="display: none; width: 0px; height: 0px;"></button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="uname" type="text" placeholder="Name" class="form-control"
+                                                data-bv-field="uname"><i class="form-control-feedback bv-no-label"
+                                                data-bv-icon-for="uname" style="display: none;"></i>
+                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="uname"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">Please insert your
+                                                name</small>
+                                        </div>
+                                    </div>
+
+                                    <!-- COLUMNS 2 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="email" type="text" placeholder="Email" class="form-control"
+                                                data-bv-field="email"><i class="form-control-feedback bv-no-label"
+                                                data-bv-icon-for="email" style="display: none;"></i>
+                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="email"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">This field is
+                                                required</small><small class="help-block"
+                                                data-bv-validator="emailAddress" data-bv-for="email"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">The input is not a
+                                                valid email address</small>
+                                        </div>
+                                    </div>
+                                    <!-- COLUMNS 3 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- COLUMNS 4 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="subject" type="text" placeholder="Subject"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- COLUMNS 5 -->
+                                    <div class="col-md-12">
+                                        <div class="form-group has-feedback">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="sf-captcha-wrap">
+                                    <div class="col-md-12 margin-b-20"><img
+                                            src="https://aonetheme.com/service-finder-demo4/wp-content/plugins/sf-booking/lib/captcha.php?where=contactus&amp;rand=1463012413"
+                                            id="captchaimg_contactus">
+
+                                        Can’t read the image? click <a href="javascript:;" data-where="contactus"
+                                            class="refreshCaptcha">here</a> to refresh.</div>
+
+                                    <div class="col-md-12">
+
+                                        <div class="form-group">
+
+                                            <div class="input-group"> <i class="input-group-addon fa fa-pencil"></i>
+
+                                                <input name="captcha_code" id="captcha_code" type="text"
+                                                    class="form-control" placeholder="Enter the code above here">
+
+                                                <input type="hidden" name="captchaon" value="1">
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="sf-contact-submit-btn">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <br><br><br><br><br><br>
+    <footer class="main-footer-last-type">
+
+
+
+        <div class="main-footer-last-type-div">
+
+            <div class="main-footer-last-type-grid-type">
+
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Site Links</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Site Links</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Popular Cities</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="">Ballston Lake</a></li>
+                        <li><a href="">Batumi</a></li>
+                        <li><a href="">Brooklyn</a></li>
+                        <li><a href="">Cambridge</a></li>
+                        <li><a href="">elmansoura</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer-last-type-maain-grid-type">
+                    <h4 class="widget-title">Contact Info</h4>
+
+                    <ul class="providers-city-list">
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">+41 232 525 5257</a></li>
+                        <li><a href="#">+41 856 525 5369</a></li>
+                        <li><a href="#">hello@Servicefinder.com </a></li>
+                    </ul>
+                </div>
+                <!-- <div class="main-footer-last-type-maain-grid-type"></div> -->
+                <!-- <div class="main-footer-last-type-maain-grid-type"></div> -->
+
+            </div>
+            <br><br>
+
+            <div class="provider-logo-footer">
+                <div class="sf-footer-bottom-section">
+                    <div class="sf-f-logo logo-footer">
+                        <a href=""> <img
+                                src="http://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png">
+                        </a>
+                    </div>
+                    <div class="sf-f-copyright">
+                        <span>Copyright 2024 | All Rights Reserved</span>
+                    </div>
+                    <div class="sf-f-social">
+                        <ul class="socila-box">
+                            <li><i class="fa-brands fa-facebook fa-beat" style="color: #063151;"></i></li>
+                            <li><i class="fa-brands fa-linkedin fa-beat-fade" style="color: blue;"></i></li>
+                            <li><i class="fa-brands fa-twitter fa-bounce" style="color: #74C0FC;"></i></li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi deserunt ut, aut velit earum consequuntur reprehenderit explicabo saepe placeat eos magni quod quos illum nulla nesciunt consectetur ad sequi! -->
+    </footer>
+</body>
+
+</html>
