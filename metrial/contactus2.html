@@ -4,295 +4,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/Portfolio/Screenshot (1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/Portfolio/media.css">
+    <!-- <link rel="stylesheet" href="/Portfolio/media.css"> -->
     <script src="index.js"></script>
-
-    <title>Blog Html</title>
-    <style>
-        .post-thum {
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        .post-bx {
-            font-family: sans-serif;
-            background-color: #f9fafd;
-            border-radius: 15px;
-            border-bottom-width: 3px;
-            border-bottom-style: solid;
-            border-bottom-color: #022178;
-            margin-bottom: 30px;
-            border-bottom-color: #162F96;
-        }
-
-        .post-bx .post-thum {
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        .post-thum img {
-            width: 100%;
-            height: auto;
-        }
-
-        .post-categories {
-            position: relative;
-            margin-top: -46px;
-            margin-bottom: 20px;
-        }
-
-        .post-categories a {
-            display: inline-block;
-            padding: 5px 20px;
-            color: #fff;
-            text-transform: uppercase;
-            border-radius: 10px;
-            background-color: #FFB600;
-            margin-right: 8px;
-            font-size: 14px;
-        }
-
-        .post-meta {
-            clear: both;
-            padding: 22px 30px;
-            margin: 0 -30px;
-            border-top: 1px solid #e3e3e3;
-            /* border-bottom: 2px solid #e3e3e3; */
-        }
-
-        .post-meta ul {
-            margin: 0px 0px 10px 0px;
-            float: none;
-        }
-
-        .post-meta ul li {
-            color: #595959;
-            position: relative;
-            padding-right: 10px;
-        }
-
-        .post-date {
-            width: inherit;
-            background: none;
-            margin: 0px;
-        }
-
-        .post-meta ul li {
-            display: inline-block;
-            padding: 0;
-            color: #a9a9a9;
-        }
-
-        .post-date span {
-            background: none;
-            padding: 0px;
-            font-size: inherit;
-            display: inherit;
-            vertical-align: inherit;
-        }
-
-        .post-meta ul li a {
-            text-decoration: none;
-            color: #595959;
-        }
-
-        .post-title a {
-            font-size: 24px;
-            text-decoration: none;
-            color: #337ab7;
-        }
-
-        /* .container { */
-        .container {
-            /* padding-right: 15px; */
-            /* padding-left: 15px; */
-            /* margin-right: auto; */
-            margin-left: auto;
-            padding: 42px;
-        }
-
-        .row {
-            margin-right: -15px;
-            flex-direction: column;
-
-            margin-left: -15px;
-        }
-
-        .col-md-8 {
-            width: 66.66666667%;
-        }
-
-        .col-md-8 {
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
-        .col-md-4 {
-            width: 33.33333333%;
-        }
-
-        .col-md-4 {
-            float: left;
-        }
-
-        .col-md-4 {
-
-            /* position: absolute; */
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-            top: 174px;
-            /* position: relative; */
-            min-height: 1px;
-            padding-right: 15px;
-            padding-left: 15px;
-            float: right;
-            position: absolute;
-            left: 67%;
-        }
-
-
-        .search-form {
-            /* display: -ms-flexbox; */
-            display: flex;
-            position: relative;
-        }
-
-        .search-form label {
-            display: block;
-            width: 100%;
-        }
-
-        .screen-reader-text {
-            /* border: 0; */
-            /* clip: rect(1px, 1px, 1px, 1px); */
-            -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            /* padding: 0; */
-            /* position: absolute; */
-            /* width: 1px; */
-            /* word-wrap: normal !important; */
-        }
-
-        .screen-reader-text {
-
-            display: block;
-        }
-
-        .search-field {
-            padding: 10px 15px;
-            border: 1px solid #ccc;
-            height: 40px;
-            outline: none;
-            border-radius: 10px;
-            width: 100%;
-            font-family: sans-serif;
-        }
-
-        .search-submit {
-            border: none;
-            padding: 7px 15px;
-            position: absolute;
-            right: 0px;
-            top: -2px;
-            height: 40px;
-            background-color: #FFB600;
-            border-color: #FFB600;
-            color: #000000;
-            border-radius: 442px 142px 51px 0px;
-
-
-        }
-
-        .side-bar .widget {
-            border-radius: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-        }
-
-        .widget {
-            margin-bottom: 30px;
-        }
-
-        .widget-title {
-            padding-bottom: 15px;
-            position: relative;
-            border-bottom: 1px solid #e1e1e1;
-            margin-bottom: 30px;
-        }
-
-        .widget-title ul {
-
-            list-style: none;
-            margin: 0;
-        }
-
-
-
-
-        .widget_recent_entries ul li {
-            /* list-style: none; */
-
-            padding-bottom: 18px;
-            margin-bottom: 13px;
-            border-bottom: 1px solid #e1e1e1;
-            position: relative;
-            padding: 10px 10px 10px 20px;
-            margin-bottom: 0;
-            line-height: 20px;
-        }
-
-
-
-
-
-
-        a {
-            color: #767676;
-            outline: 0 none;
-            text-decoration: none;
-        }
-
-
-        @media screen and (max-width:768px) {
-
-            .post-meta {
-                /* clear: both; */
-                /* padding: 22px 30px; */
-                margin: 0 0px;
-            }
-
-
-            .col-md-8 {
-                width: 100%;
-            }
-
-            /* .row { */
-            /* margin-right: -15px; */
-            /* margin-left: -15px; */
-            /* display: flex; */
-            /* justify-content: center; */
-            /* } */
-
-            .col-md-4 {
-                top: 0;
-                left: 0px;
-                width: 100%;
-                position: relative;
-            }
-        }
-    </style>
-
+    <link rel="icon" type="image/png" href="/Portfolio/Screenshot (1).png">
+    <title>Contact</title>
 </head>
+<style>
+    .contact-us-conatner {
+        width: 100%;
+        height: 400px;
+        border: 2PX SOLID white;
+        /* position:absolute; */
+        margin: 0 auto;
 
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/job-banner.jpg);
+
+    }
+
+    .contact-us-main {
+        width: 100%;
+        /* position: absolute; */
+        height: 100%;
+        background-color: rgba(10 10 10 0.6);
+        /* line-height: 41vmin; */
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+        /* color: #fff; */
+        background: rgb(67 3 34 / 50%);
+    }
+
+    .contact-main-hone {
+        color: white;
+        /* text-align: center; */
+        position: relative;
+        /* left: 50%;
+        right: 50%;
+        top: 50%;
+        bottom: 50%; */
+    }
+
+    #indeterminate {
+
+        display: block;
+        position: relative;
+        cursor: pointer;
+        top: 137px;
+        border: 137px;
+        font-size: 7vmin;
+        font-family: cursive;
+
+        -webkit-text-stroke: 2px red;
+        /* -webkit-background-image: url(/HTML/bl.png); */
+    }
+
+    .container {
+
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-center h2 {
+
+        line-height: 1.5;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 5vmin;
+        line-height: 50px;
+        color: #022279;
+    }
+
+    .section-head h2 {
+        -webkit-text-stroke: 2px #c3bad9;
+
+    }
+
+    .section-content {
+        margin-top: 50px;
+    }
+
+    .sf-contact-info-wrap>.row {
+        /* display: -ms-flexbox; */
+        display: flex;
+        /* -ms-flex-wrap: wrap; */
+        flex-wrap: wrap;
+    }
+
+    .row>[class*="col-"] {
+        /* display: -ms-flexbox; */
+        /* display: flex; */
+        margin-bottom: 30px;
+    }
+
+    .col-md-4 {
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+    .sf-contact-info-box {
+        width: 100%;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(46, 13, 79, 0.1);
+        text-align: center;
+        font-family: sans-serif;
+        padding: 40px 30px;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFB600;
+    }
+
+    .sf-contact-icon {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+    }
+
+    .sf-contact-icon span {
+        display: block;
+        line-height: 60px;
+    }
+
+    .sf-contact-icon span img {
+        height: 60px;
+    }
+
+    .sf-contact-info-box {
+        width: 100%;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(46, 13, 79, 0.1);
+        text-align: center;
+        padding: 40px 30px;
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFB600;
+    }
+
+    .sf-contact-info-box .sf-contact-info p {
+        margin: 0px auto 0px;
+        max-width: 250px;
+    }
+
+    .sf-contact-info-box .sf-contact-info .sf-title {
+        font-size: 24px;
+        /* -webkit-text-stroke: 2px red; */
+
+        margin: 20px 0px;
+    }
+
+    .sf-contact-form {
+        max-width: 960px;
+        margin: 0px auto;
+    }
+
+    .margin-b-30 {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+        display: none;
+    }
+
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        /* float: inline-end; */
+    }
+
+    .form-control {
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+        height: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 9px 12px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    .sf-contact-form .form-control {
+        border-radius: 14px;
+        border: 2px solid #c2c8d7;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .form-control-feedback {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+        z-index: 2;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+
+    .col-md-12 {
+
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form-control {
+        height: 190px;
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+        height: 40px;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 9px 12px;
+
+    }
+
+    .form-control {
+        border-radius: 14px;
+        border: 2px solid #c2c8d7;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .sf-captcha-wrap {
+        max-width: 430px;
+        clear: both;
+        margin: auto;
+    }
+
+    .margin-b-20 {
+        float: left;
+        margin-bottom: 20px;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+    .refreshCaptcha {
+        color: #162F96;
+        font-weight: 600;
+    }
+
+    .refreshCaptcha {
+        color: #162F96;
+        font-weight: 600;
+    }
+
+    .input-group {
+        position: relative;
+        display: table;
+        border-collapse: separate;
+        margin: 0 auto;
+    }
+
+    .fa-pencil {
+        display: none;
+    }
+
+    .sf-contact-form .sf-contact-submit-btn {
+        max-width: 188px;
+        margin: 0px auto;
+    }
+</style>
 
 <body>
     <header>
@@ -310,8 +329,7 @@
             style="background-color: black;margin-top: 0px;padding-top: 26px; position: relative; height: 103px;">
             <!-- logo -->
             <div class="div-logo-one">
-                <!-- <div class="inner-logo"> -->
-                <!-- </div>                -->
+
                 <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-light.png"
                     style="position: absolute;">
                 <img src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2021/12/logo-dark-1.png" alt="">
@@ -336,7 +354,6 @@
                                 HOME &nbsp;<i class="fa-solid fa-angle-down fa-beat"></i>
                             </a>
                             <div class="dpdbmb"><br>
-                                <!-- <ul></ul> -->
                                 <div id="idalinsttupe"><a href="" class="link1">Home1</a></div><br><br>
                                 <hr><br>
                                 <div id="idalinsttupe"><a href="" class="link1">Home2</a></div><br><br>
@@ -448,17 +465,15 @@
 
                         </div>
                     </li>
-                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/blog1.html"
+                    <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/blog1.html"
                         style="color: white;">Blog</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/contactus2.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/contactus2.html"
                         style="color: white;">Contact Us</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/post3.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/post3.html"
                         style="color: white;">Post a Job</a></li>
-                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Portfolio/job4.html"
+                <li type="none" id="link-a">&nbsp;&nbsp;<a href="/Service-Web/metrial/job4.html"
                         style="color: white;">Jobs</a></li>
-
                 </ul>
-
             </div>
 
             <!-- this is a button -->
@@ -585,7 +600,6 @@
                                 </div>
                                 <!-- https://www.msn.com/en-in/sports/cricket/ipl?ocid=winp2fptaskbar&cvid=06de50b557754ca3a8572803e6487c46 -->
 
-                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
@@ -813,28 +827,6 @@
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
             </div>
 
@@ -868,7 +860,7 @@
         </div>
 
         </div>
-        <br>
+        <!-- <br> -->
 
 
 
@@ -882,389 +874,204 @@
 
 
         </div>
+
 
 
 
     </header>
     <section>
+        <div class="contact-us-conatner">
+            <div class="contact-us-main">
+                <div class="contact-main-hone">
+                    <h1 id="indeterminate">
+                        Contact Us <br><span>
+                            <h3>Home > Contact Us</h3>
+                        </span>
+                    </h1>
+
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <!-- second -->
 
 
-        <!-- lorem*60 -->
 
-        <div class="container">
+        <div class="section-full p-t80 p-b50">
+            <div class="container">
 
-            <div class="row">
+                <div class="section-head text-center">
+                    <h2 class="sf-title">Contact Information</h2>
+                </div>
 
-                <!-- Left part start -->
+                <div class="section-content">
 
-                <div class="col-md-8">
-
-                    <div id="grid">
-
+                    <div class="sf-contact-info-wrap">
                         <div class="row">
 
 
-
-                            <div id="post-189"
-                                class="post-189 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized blog-post blog-list col-md-12 sf-blog-style-1">
-
-                                <div class="post-bx">
-
-                                    <!-- Content section for blogs start -->
-
-                                    <div class="post-thum"> <a href=""><img title="My fourth blog post title"
-                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/motorcycle-driving-school-850x400.jpg"></a>
+                            <!-- COLUMNS 1 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/1.png"></span>
                                     </div>
-                                    <div class="post-info">
-
-                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
-                                        </div>
-
-                                        <div class="post-meta">
-
-                                            <ul>
-
-                                                <li class="post-date"><span>January 12, 2016</span></li>
-
-                                                <li class="post-author">By <a href="" title="Posts by admin"
-                                                        rel="author">admin</a> </li>
-
-                                            </ul>
-
-                                        </div>
-
-                                        <div class="post-text">
-                                            <!-- <br> -->
-
-                                            <h4 class="post-title"> <a href="">My
-                                                    fourth blog post title</a> </h4>
-
-                                            <p style="    font-size: 11px;
-                                                    padding-top: 15px;
-                                                    padding-bottom: 15px;
-                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap introduction electronic typesetting,
-                                                remaining essentially unchanged. It was popularised in the 1960s with
-                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                                recently with desktop publishing software like Aldus PageMaker including
-                                                versions of Lorem Ipsum.</p>
-
-
-                                            <p></p>
-
-                                        </div>
-
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Mailing Address</h4>
+                                        <p>121 King Street, Melbourne Victoria 3000 Australiaa</p>
                                     </div>
-
-
-                                    <!-- Content section for blogs end -->
-
                                 </div>
-
                             </div>
-
-                            <!-- <br><br> -->
-
-                            <div id="post-186"
-                                class="post-186 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized blog-post blog-list col-md-12 sf-blog-style-1">
-
-                                <div class="post-bx">
-
-                                    <!-- Content section for blogs start -->
-
-                                    <div class="post-thum"> <a href=""><img title="My third blog post title"
-                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/woman-with-hat-sitting-chairs-beach-beautiful-tropical-beach-woman-relaxing-tropical-beach-koh-nangyuan-island-850x400.jpg"></a>
+                            <!-- COLUMNS 2 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/2.png"></span>
                                     </div>
-                                    <div class="post-info">
-
-                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
-                                        </div>
-
-                                        <div class="post-meta">
-
-                                            <ul>
-
-                                                <li class="post-date"><span>January 12, 2016</span></li>
-
-                                                <li class="post-author">By <a href="" title="Posts by admin"
-                                                        rel="author">admin</a> </li>
-
-                                            </ul>
-
-                                        </div>
-
-                                        <div class="post-text">
-
-                                            <h4 class="post-title"> <a href="">My
-                                                    third blog post title</a> </h4>
-
-                                            <p style="    font-size: 11px;
-                                                    padding-top: 15px;
-                                                    padding-bottom: 15px;
-                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap introduction electronic typesetting,
-                                                remaining essentially unchanged. It was popularised in the 1960s with
-                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                                recently with desktop publishing software like Aldus PageMaker including
-                                                versions of Lorem Ipsum.</p>
-
-
-                                            <p></p>
-
-                                        </div>
-
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Email Info</h4>
+                                        <p>info@brandcoin.comm</p>
                                     </div>
-
-                                    <!-- Content section for blogs end -->
-
                                 </div>
-
                             </div>
-
-
-
-                            <div id="post-74"
-                                class="post-74 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-automobile tag-beauty-and-personal-care blog-post blog-list col-md-12 sf-blog-style-1">
-
-                                <div class="post-bx">
-
-                                    <!-- Content section for blogs start -->
-
-                                    <div class="post-thum"> <a href=""><img title="My second blog post title"
-                                                src="https://aonetheme.com/service-finder-demo4/wp-content/uploads/2016/01/young-couple-buying-car-car-showroom-850x400.jpg"></a>
+                            <!-- COLUMNS 3 -->
+                            <div class="col-md-4">
+                                <div class="sf-contact-info-box">
+                                    <div class="sf-contact-icon">
+                                        <span><img
+                                                src="https://aonetheme.com/service-finder-demo4/wp-content/themes/service-finder/inc/images/contact-us/1.png"></span>
                                     </div>
-                                    <div class="post-info">
-
-                                        <div class="post-categories"><a href="" rel="category tag">Uncategorized</a>
-                                        </div>
-
-                                        <div class="post-meta">
-
-                                            <ul>
-
-                                                <li class="post-date"><span>January 10, 2016</span></li>
-
-                                                <li class="post-author">By <a href="" title="Posts by admin"
-                                                        rel="author">admin</a> </li>
-
-                                            </ul>
-
-                                        </div>
-
-                                        <div class="post-text">
-
-                                            <h4 class="post-title"> <a href="">My
-                                                    second blog post title</a> </h4>
-
-                                            <p style="    font-size: 11px;
-                                                    padding-top: 15px;
-                                                    padding-bottom: 15px;
-                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap introduction electronic typesetting,
-                                                remaining essentially unchanged. It was popularised in the 1960s with
-                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                                recently with desktop publishing software like Aldus PageMaker including
-                                                versions of Lorem Ipsum.</p>
-
-
-                                            <p></p>
-
-                                        </div>
-
+                                    <div class="sf-contact-info">
+                                        <h4 class="sf-title">Phone Number</h4>
+                                        <p>0800-123456 (24/7 Support Line) 0800-1236544</p>
                                     </div>
-
-                                    <!-- Content section for blogs end -->
-
                                 </div>
-
                             </div>
-
-
-
-                            <div id="post-1002"
-                                class="post-1002 post type-post status-publish format-standard hentry category-uncategorized tag-automotive tag-cleaning tag-general-labor no-img-post blog-post blog-list col-md-12 sf-blog-style-1">
-
-                                <div class="post-bx">
-
-                                    <!-- Content section for blogs start -->
-
-                                    <div class="post-thum">
-                                    </div>
-                                    <div class="post-info">
-
-                                        <div class="post-categories"><a href="" rel="">Uncategorized</a></div>
-
-                                        <div class="post-meta">
-
-                                            <ul>
-
-                                                <li class="post-date"><span>January 10, 2016</span></li>
-
-                                                <li class="post-author">By <a href="" title="Posts by admin"
-                                                        rel="author">admin</a> </li>
-
-                                            </ul>
-
-                                        </div>
-
-                                        <div class="post-text">
-
-                                            <h4 class="post-title"> <a href="">My
-                                                    first blog post title</a> </h4>
-
-                                            <p style="    font-size: 11px;
-                                                    padding-top: 15px;
-                                                    padding-bottom: 15px;
-                                                ">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry’s standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. It has survived not only five
-                                                centuries, but also the leap introduction electronic typesetting,
-                                                remaining essentially unchanged. It was popularised in the 1960s with
-                                                the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                                recently with desktop publishing software like Aldus PageMaker including
-                                                versions of Lorem Ipsum.</p>
-
-
-                                            <p></p>
-
-                                        </div>
-
-                                    </div>
-
-                                    <!-- Content section for blogs end -->
-
-                                </div>
-
-                            </div>
-
 
                         </div>
-
                     </div>
 
-                    <div class="pagination-two pagination-center clearfix">
+                    <div class="sf-contact-form-wrap">
 
+                        <div class="sf-contact-form">
+                            <div class="sf-con-form-title text-center">
+                                <h2 class="margin-b-30">Contact Information</h2>
+                            </div>
+                            <form method="post" class="contactform bv-form" novalidate="novalidate"><button
+                                    type="submit" class="bv-hidden-submit"
+                                    style="display: none; width: 0px; height: 0px;"></button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="uname" type="text" placeholder="Name" class="form-control"
+                                                data-bv-field="uname"><i class="form-control-feedback bv-no-label"
+                                                data-bv-icon-for="uname" style="display: none;"></i>
+                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="uname"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">Please insert your
+                                                name</small>
+                                        </div>
+                                    </div>
 
-                    </div>
+                                    <!-- COLUMNS 2 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <input name="email" type="text" placeholder="Email" class="form-control"
+                                                data-bv-field="email"><i class="form-control-feedback bv-no-label"
+                                                data-bv-icon-for="email" style="display: none;"></i>
+                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="email"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">This field is
+                                                required</small><small class="help-block"
+                                                data-bv-validator="emailAddress" data-bv-for="email"
+                                                data-bv-result="NOT_VALIDATED" style="display: none;">The input is not a
+                                                valid email address</small>
+                                        </div>
+                                    </div>
+                                    <!-- COLUMNS 3 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- COLUMNS 4 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input name="subject" type="text" placeholder="Subject"
+                                                class="form-control">
+                                        </div>
+                                    </div>
 
-                </div>
+                                    <!-- COLUMNS 5 -->
+                                    <div class="col-md-12">
+                                        <div class="form-group has-feedback">
+                                            <textarea placeholder="Message" class="form-control"></textarea>
 
-                <!-- Left part END -->
+                                        </div>
+                                    </div>
 
-                <!-- Side bar start -->
+                                </div>
+                                <div class="sf-captcha-wrap">
+                                    <div class="col-md-12 margin-b-20"><img
+                                            src="https://aonetheme.com/service-finder-demo4/wp-content/plugins/sf-booking/lib/captcha.php?where=contactus&amp;rand=1463012413"
+                                            id="captchaimg_contactus">
 
-                <div class="col-md-4">
+                                        Can’t read the image? click <a href="javascript:;" data-where="contactus"
+                                            class="refreshCaptcha">here</a> to refresh.</div>
 
-                    <!-- Default Sidebar -->
-                    <aside class="side-bar">
-                        <div class="bx-search widget search-2 widget_search">
-                            <form class="search-form" action="">
-                                <label>
-                                    <span class="screen-reader-text">Search for:</span>
-                                    <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                                </label>
-                                <input type="submit" class="search-submit" value="Search">
+                                    <div class="col-md-12">
+
+                                        <div class="form-group">
+
+                                            <div class="input-group"> <i class="input-group-addon fa fa-pencil"></i>
+
+                                                <input name="captcha_code" id="captcha_code" type="text"
+                                                    class="form-control" placeholder="Enter the code above here">
+
+                                                <input type="hidden" name="captchaon" value="1">
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="sf-contact-submit-btn">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
                             </form>
                         </div>
-                        <div class="bx-recent-post widget recent-posts-2 widget_recent_entries">
-                            <h4 class="widget-title">Recent Posts</h4>
-                            <ul>
-                                <li>
-                                    <a href="">My
-                                        fourth blog post title</a>
-                                </li>
-                                <li>
-                                    <a href="">My
-                                        third blog post title</a>
-                                </li>
-                                <li>
-                                    <a href="">My
-                                        second blog post title</a>
-                                </li>
-                                <li>
-                                    <a href="">My
-                                        first blog post title</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="bx-recent-comments widget recent-comments-2 widget_recent_comments">
-                            <h4 class="widget-title">Recent Comments</h4>
-                            <ul id="recentcomments">
-                                <li class="recentcomments"><span class="comment-author-link"><a href=""
-                                            class="url">Remo</a></span> on <a href="">My
-                                        first blog post title</a></li>
-                                <li class="recentcomments"><span class="comment-author-link"><a href=""
-                                            class="url">Jounty
-                                            Routes</a></span> on <a href="">My
-                                        first blog post title</a></li>
-                                <li class="recentcomments"><span class="comment-author-link"><a href="" class="url">Mike
-                                            Jekson</a></span> on <a href="">My
-                                        first blog post title</a></li>
-                                <li class="recentcomments"><span class="comment-author-link"><a href="" class="url">Mr
-                                            WordPress</a></span> on <a href="">My
-                                        first blog post title</a></li>
-                            </ul>
-                        </div>
-                        <div class="bx-archives widget archives-3 widget_archive">
-                            <h4 class="widget-title">Archives</h4>
-                            <ul>
-                                <li><a href="">January 2016</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="bx-categories widget categories-3 widget_categories">
-                            <h4 class="widget-title">Categories</h4>
-                            <ul>
-                                <li class="cat-item cat-item-1"><a href="">Uncategorized</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="bx-meta widget meta-3 widget_meta">
-                            <h4 class="widget-title">Meta</h4>
-                            <ul>
-                                <li><a href="">Register</a>
-                                </li>
-                                <li><a href="">Log in</a></li>
-                                <li><a href="">Entries feed</a></li>
-                                <li><a href="">Comments
-                                        feed</a></li>
-
-                                <li><a href="">WordPress.org</a></li>
-                            </ul>
-
-                        </div>
-                    </aside>
-
+                    </div>
                 </div>
 
-                <!-- Side bar END -->
-
             </div>
-
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     </section>
 
-
-
-
-
-
-
+    <br><br><br><br><br><br>
     <footer class="main-footer-last-type">
 
 
@@ -1349,7 +1156,6 @@
 
         <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi deserunt ut, aut velit earum consequuntur reprehenderit explicabo saepe placeat eos magni quod quos illum nulla nesciunt consectetur ad sequi! -->
     </footer>
-
 </body>
 
 </html>
